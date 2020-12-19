@@ -8,19 +8,22 @@ const macAddr = () =>
 const locales = ['af', 'jp', 'ua', 'de', 'en', 'sc', 'it', 'ch', 'au', 'ru'];
 
 function Request() {
-	this.user = `${user}${random(1, 100)}`;
+	this.user = `user${random(1, 100)}`;
 	this.ip = `${random(0, 255)}.${random(0, 255)}.${random(0, 255)}.${random(
 		0,
 		255
 	)}`;
-	this.mac = macAddr;
-	this.time = `${random(0, 23)}${random(0, 59)}`;
+	this.mac = macAddr();
+	this.time = `${random(0, 23)}:${random(0, 59)}`;
 	this.locale = locales[random(0, locales.length)];
 }
 
-// function UnsafeRequest() {
-// 	Request.call(this, user, time);
-// }
+function SafeRequest() {
+	this.user = `user${random(1, 100)}`;
+	this.ip = '0.0.0.0';
+	this.mac = '00:00:00:00:00:00';
+	this.time = `${random(0, 23)}:${random(0, 59)}`;
+	this.locale = 'ua';
+}
 
-// UnsafeRequest.prototype = Object.create(Request.prototype);
-// UnsafeRequest.prototype.constructor = Request;
+module.exports = { random, Request, SafeRequest };
