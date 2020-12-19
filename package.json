@@ -1,0 +1,24 @@
+{
+  "name": "mlbrainjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "brainjs": "^0.7.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demetrisKPI/mlbrainjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demetrisKPI/mlbrainjs/issues"
+  },
+  "homepage": "https://github.com/demetrisKPI/mlbrainjs#readme"
+}
