@@ -244,7 +244,7 @@ module.exports = {
 		{ name: 'Zambia', code: 'ZM' },
 		{ name: 'Zimbabwe', code: 'ZW' },
 	],
-	users: 200,
-	requestsCount: 5000,
-	fileName: 'temp.txt',
+	users: 10,
+	requestsCount: 20000,
+	fileName: 'temp',
 };

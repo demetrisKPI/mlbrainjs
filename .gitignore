@@ -1,1 +1,4 @@
 /node_modules
+/temp_train.txt
+/temp.txt
+/trained-net2.json
